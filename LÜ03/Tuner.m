@@ -16,7 +16,7 @@ T = FileSize / Samplefrequenz;
 DeltaF = 1 / T;
 
 % Anlegen eines Frequenzvektor
-fVek = 0:DeltaF:Samplefrequenz;
+fVek = 0:DeltaF:Samplefrequenz - 0.25;
 
 % FFT durchführen
 S=fft(y_normiert);
@@ -33,6 +33,6 @@ title('Original')
 
 % Absolutwert der FFT wird geplottet
 subplot (2,1,2)
-plot(abs(S))
+plot(fVek, abs(S))
 title('Absolutwert der FFT')
 

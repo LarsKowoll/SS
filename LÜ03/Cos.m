@@ -16,5 +16,5 @@ for i = 1:n
     FreqVekGesamt = [FreqVekGesamt FreqVekTemp];
 end
 
-
+plot(FreqVekGesamt);
 sound(FreqVekGesamt, fS);
