@@ -1,5 +1,5 @@
 M = 256;    % Anzahl der Abtastwerte
-F = 15.0;   % Frequenz des cos-Signals
+F = 1;   % Frequenz des cos-Signals
 
 % Signalerzeugung
 t = 0:M-1;
