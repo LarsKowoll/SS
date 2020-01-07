@@ -40,12 +40,12 @@ switch select
         s1 = select4;
 end
 %% Filter
-%load('IIR_1500_80dB');
-%s2 = sosfilt(IIR_1500_80dB,actualSignal);
+load('IIR_1500_80dB');
+s2 = sosfilt(IIR_1500_80dB,s1);
 
 %% Aufgabe 4.3
- load('IIR_1400_40dB');
- s2 = my_sosfilt(IIR_1400_40dB, s1);
+% load('IIR_1400_40dB');
+% s2 = my_sosfilt(IIR_1400_40dB, s1);
 %% Plotting
 s2 = s2 / max(abs(s2));
 %s1 = s1 ./ abs(s1);
